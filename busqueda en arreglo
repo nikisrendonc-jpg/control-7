@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class BusquedaArreglo {
+    public static void main(String[] args) {
+        int[] numeros = {12, 45, 78, 23, 56, 89, 10};
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Número a buscar: ");
+        int buscar = sc.nextInt();
+        boolean encontrado = false;
+        for (int n : numeros) {
+            if (n == buscar) {
+                encontrado = true;
+                break;
+            }
+        }
+        System.out.println("¿Encontrado?: " + (encontrado ? "SÍ" : "NO"));
+    }
+}
